@@ -54,7 +54,7 @@ void Djikstra::insertionSort(std::vector<Node> &list, Node * node)
     {
         if (node->g < list[n].g)
         {
-            list.emplace(list.begin() + n, node);
+            list.emplace(list.begin() + n, *node);
             break;
         }
     }
